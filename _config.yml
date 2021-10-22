@@ -18,7 +18,7 @@ timezone: Asia/KualaLumpur
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Jun Yian's Journal                  # the main title
+title: JunYian                  # the main title
 
 tagline: Reverse engineering, machine learning, and other misc. topics   # it will display as the sub-title
 
