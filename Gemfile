@@ -4,6 +4,8 @@ source "https://rubygems.org"
 
 gem "jekyll-theme-chirpy", "~> 4.3", ">= 4.3.3"
 
+# gem "github-pages", "~> 219", group: :jekyll_plugins
+
 group :test do
   gem "html-proofer", "~> 3.18"
 end
