@@ -1,6 +1,5 @@
 +++
 title = "About"
-date = "2023-11-27"
 +++
 
 Dad of 2 very cheeky girls and husband to a very lovely wife.
