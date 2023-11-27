@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <main aria-role="main">
+    <div>
+      Test
+    </div>
+<!--
+    <div>
+      {{ $pages := where .Pages "Section" "posts"}}
+      {{ range first 10 $pages }}
+        <article>
+          <div>
+            <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+            {{ .Summary }}
+          </div>
+        </article>
+      {{ end }}
+    </div>
+    <div>
+      <ul>
+        {{ range .Site.Taxonomies.tags }}
+          <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+-->
+  </main>
+{{ end }}

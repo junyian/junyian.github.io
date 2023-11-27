@@ -1,0 +1,50 @@
+baseURL = "https://junyian.github.io/"
+languageCode = "en-us"
+title = "JunYian's Blog"
+subtitle = "Reverse engineering"
+theme = "risotto"
+
+sectionPagesMenu = "main"
+include_toc = true
+
+[params.theme]
+palette = "gruvbox-dark"
+
+[params.about]
+title = "About"
+description = "Blog about reverse engineering and anything else that comes to mind"
+logo = "images/rice.svg"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/junyian"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-twitter"
+title = "X"
+url = "https://twitter.com/junyian"
+
+[menu]
+
+    [[menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about/"
+        weight = 10
+    
+    [taxanomies]
+    category = "categories"
+    tag = "tags"
+    series = "series"
+
+    [markup.goldmark.renderer]
+    unsafe = true
+
+    [markup]
+
+        [markup.tableOfContents]
+            startLevel = 2
+            endLevel   = 3
+            ordered    = true
+            
