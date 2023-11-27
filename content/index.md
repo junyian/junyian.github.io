@@ -1,5 +1,4 @@
 +++
-categories = ["index"]
 title = "Blog reboot"
 date = 2023-11-25T00:34:25+08:00
 +++

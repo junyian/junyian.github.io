@@ -5,16 +5,21 @@ subtitle = "Reverse engineering"
 theme = "risotto"
 
 sectionPagesMenu = "main"
-include_toc = true
+# include_toc = true
+
+[params]
+noindex = false
 
 [params.theme]
 palette = "gruvbox-dark"
 
+# Sidebar: about/bio
 [params.about]
 title = "About"
 description = "Blog about reverse engineering and anything else that comes to mind"
 logo = "images/rice.svg"
 
+# Sidebar : social links
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
@@ -24,6 +29,7 @@ url = "https://github.com/junyian"
 icon = "fa-brands fa-twitter"
 title = "X"
 url = "https://twitter.com/junyian"
+
 
 [menu]
 
