@@ -15,7 +15,7 @@ alternatives. Then I was introduced to [Hugo](https://gohugo.io), which seemed
 like it didn't require as much maintenance as Jekyll.
 
 So, this is the reboot of my blog. I'll slowly port over the posts I've created
-before in the previous blog, and add on my write ups for the more recent 
+before in the previous blog, and add on my write ups for the more recent
 [Flare-On](https://flare-on.com) challenges. Might as well take this opportunity
 to review my previous posts and fix the scripts that's no longer working too,
 while learning how to use Hugo and this template.
