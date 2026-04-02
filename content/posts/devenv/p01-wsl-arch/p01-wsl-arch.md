@@ -84,3 +84,55 @@ The operation completed successfully.
 This only sets the default for *future* distributions; since Arch will be a fresh WSL2 installation, no additional conversion steps are needed.
 
 **You're ready to proceed.** Once these checks pass, you have everything needed to download and install Arch. The next section covers downloading the Arch filesystem.
+
+### Downloading the Arch Filesystem
+
+Now that your WSL2 environment is verified and ready, the next step is downloading the minimal Arch Linux filesystem. This is a small tarball—usually 160–180 MB—that contains just the essentials. You'll extract it into WSL in the next section.
+
+**Step 1: Navigate to the Arch bootstrap images**
+
+Open your web browser and navigate to the Arch bootstrap images mirror:
+
+[https://mirror.archlinux.org/iso/latest/](https://mirror.archlinux.org/iso/latest/)
+
+You'll see a list of filesystems. Look for the file named `archlinux-bootstrap-YYYY.MM.DD-x86_64.tar.zst` (version dates change monthly; download the latest).
+
+**Step 2: Download the correct tarball**
+
+The file you want is the **x86_64 tarball**—this is the standard for modern Windows systems (both 32-bit and 64-bit Windows run x86_64 applications). Do not download the `aarch64` version unless you're on ARM-based Windows (rare).
+
+Right-click the link and select **"Save link as..."**, or click to download directly. Save the file to an easy-to-find location:
+
+```
+C:\Users\<YourUsername>\Downloads\
+```
+
+The download will take 1–2 minutes on a typical internet connection.
+
+**Step 3: Verify the download (recommended)**
+
+Verifying your download ensures the file wasn't corrupted during transfer. This step is optional but good practice.
+
+On the Arch bootstrap images page, you'll find SHA256 checksums listed next to each file. The checksum looks like:
+
+```
+a1b2c3d4e5f6... (a very long string of letters and numbers)
+```
+
+To verify on Windows, open PowerShell and run:
+
+```powershell
+Get-FileHash C:\Users\<YourUsername>\Downloads\archlinux-bootstrap-YYYY.MM.DD-x86_64.tar.zst
+```
+
+The output will show something like:
+
+```
+Algorithm       : SHA256
+Hash            : A1B2C3D4E5F6... (a long string)
+Path            : C:\Users\YourUsername\Downloads\archlinux-bootstrap-YYYY.MM.DD-x86_64.tar.zst
+```
+
+Compare the **Hash** value with the checksum listed on the Arch download page. If they match exactly, your file is good.
+
+**You're ready to proceed.** Once your download is complete (and verified, if you chose to do so), you have the Arch filesystem ready to import into WSL. The next section covers bootstrapping it into your WSL environment.
