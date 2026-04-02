@@ -27,3 +27,60 @@ Here's what you'll do:
 5. Verify Arch is working and ready for the next steps
 
 If you get stuck, the troubleshooting section at the end covers common hiccups.
+
+## Installation Details
+
+### Prerequisites and Setup
+
+Before starting the Arch installation, verify your WSL2 setup is correct. This takes just a few minutes and ensures everything is ready.
+
+**Step 1: Check your WSL version**
+
+First, verify that WSL2 is installed on your system:
+
+```
+wsl --version
+```
+
+Expected output (exact format may vary slightly):
+```
+WSL version: 2.x.x
+Kernel version: 6.x.x.x
+```
+
+If you see an error like "wsl: command not found", WSL isn't installed yet. Visit the [Windows Subsystem for Linux documentation](https://learn.microsoft.com/en-us/windows/wsl/install) for installation instructions specific to your Windows version.
+
+**Step 2: Check your WSL default version**
+
+Next, list your installed distributions and verify WSL2 is set as the default:
+
+```
+wsl -l -v
+```
+
+Expected output (example with Ubuntu):
+```
+  NAME                   STATE           VERSION
+* Ubuntu                 Running         2
+  docker-desktop         Stopped         2
+```
+
+The `VERSION` column shows which WSL version each distribution uses. The `*` marks your default distribution. All versions should show `2`—if any show `1`, you'll need to convert them in the next step.
+
+**Step 3: Set WSL2 as default (if needed)**
+
+If the previous command showed `VERSION 1` for any distribution, set WSL2 as the default:
+
+```
+wsl --set-default-version 2
+```
+
+Expected output:
+```
+For information on key differences with WSL 2 please visit https://aka.ms/wsl2
+The operation completed successfully.
+```
+
+This only sets the default for *future* distributions; since Arch will be a fresh WSL2 installation, no additional conversion steps are needed.
+
+**You're ready to proceed.** Once these checks pass, you have everything needed to download and install Arch. The next section covers downloading the Arch filesystem.
