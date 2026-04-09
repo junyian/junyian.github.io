@@ -2,6 +2,7 @@
 title = 'Building My DevEnv: Arch, Nvim and Nix'
 date = 2026-03-29T00:00:00+08:00
 categories = ["Dev Environment"]
+series = ["Dev Environment"]
 tags = ["wsl", "arch", "neovim", "nix", "stow", "dotfiles"]
 +++
 
@@ -59,7 +60,7 @@ This series walks through how I built this environment from scratch. Each part
 covers a distinct layer of the stack, and I've tried to document the actual
 process.
 
-- **Part 1 — WSL + Arch**: Getting Arch Linux running on WSL2
+- [**Part 1 — WSL + Arch**: Getting Arch Linux running on WSL2](/posts/devenv/p01-wsl-arch)
 - **Part 2 — Neovim + LazyVim**: Setting up Neovim as a full IDE with LazyVim
   and Lazygit
 - **Part 3 — Nix + Flakes**: Reproducible, per-project dev shells with Nix
